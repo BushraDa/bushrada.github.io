@@ -307,10 +307,11 @@ article:hover .overlay a {
 .items > div {
     padding: 0;
 }
-article img {
+figure img {
     width: 100%;
 }
-figure {
+/** for adjusting the size of overlap with the size for image **/
+.portfolio figure {
     margin: 0 !important;
 }
 .overlay p {
@@ -362,4 +363,32 @@ figure {
         max-width: 100% !important;
         padding: 0 !important;
     }
+}
+/*** Certificates ***/
+.certificates figure {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.certificates div,
+.certificates .row {
+    padding: 0;
+    margin: 0;
+}
+.gallery_pics:hover {
+  cursor: pointer;
+}
+#Fullscreen img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+#Fullscreen {
+  z-index: 9999;
+  position: fixed;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  display: none;
 }
