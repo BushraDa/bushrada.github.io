@@ -302,10 +302,10 @@ article:hover .overlay a {
     animation: 0.5s ease-in-out slideInFromButtom;
 }
 .items {
-    margin: 20px 0;
+    margin: auto;
 }
 .items > div {
-    padding: 0;
+    padding: 1%;
 }
 figure img {
     width: 100%;
@@ -365,15 +365,6 @@ figure img {
     }
 }
 /*** Certificates ***/
-.certificates figure {
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
-.certificates div,
-.certificates .row {
-    padding: 0;
-    margin: 0;
-}
 .gallery_pics:hover {
   cursor: pointer;
 }
@@ -391,4 +382,33 @@ figure img {
   top: 5%;
   left: 5%;
   display: none;
+}
+
+/** Thumbnail image **/
+.thumbnail {
+    width: 30px;
+    height: 30px;
+}
+
+.fullOverlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.fullOverlay .closebtn {
+    position: sticky;
+    top: 20px;
+    left: 40px;
+    font-size: 60px;
+}
+.overlay-content img {
+    width: 70%;
 }

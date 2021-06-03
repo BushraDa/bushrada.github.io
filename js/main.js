@@ -49,13 +49,14 @@ $('.count').each(function () {
     });
 });
 
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
 $(document).ready(function() {
   $('.gallery_pics').click(function(e) {
-      var src = $(this).attr('src'); //get the source attribute of the clicked image
-      $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
-      $('#Fullscreen').fadeIn();
-  });
-  $('#Fullscreen').click(function(){
-    $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
+    var src = $(this).attr('src'); //get the source attribute of the clicked image
+    $('#myNav img').attr('src', src); //assign it to the tag for your fullscreen div
+    document.getElementById("myNav").style.width = "100%";
   });
 });
