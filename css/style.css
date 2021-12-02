@@ -96,6 +96,10 @@ aside .links a{
 h1, h2, h3, h4, h5 {
     font-family: 'Aldrich';
 }
+.highlight {
+    font-size: larger;
+    color: #22f5bd;
+}
 section{
     background-color: #313C42;
     padding: 5%;
